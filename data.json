@@ -1,0 +1,125 @@
+[
+  {
+    "username":"342423198504150129",
+    "password":"Gs102030",
+    "location": "广州分公司",
+    "schedule_solution":"自动化-外修",
+    "schedule_rule_type":"13",
+    "repairers": [
+      "广州市华誉",
+      "test01"
+    ],
+    "rules":[
+      {
+        "rule_level": "1",
+        "rule_mark": "1",
+        "rule_max_money": "200",
+        "rule_sysmbol": "1",
+        "rule_min_money":"1",
+        "rule_case_type": ["1","2"],
+        "rule_loss": ["1"],
+        "rule_cj":["1"],
+        "is_super_rule":false,
+        "priority_group":[
+          {
+            "name":"业务组3",
+            "rule": {
+              "schedule_method": "2",
+              "allocation_rule":"5",
+              "smartDispatchs":true,
+              "saturation":"10",
+              "smartDispatch":"1"
+            }
+          }
+        ],
+        "bottom_group":[
+          {
+            "name":"业务组3",
+            "rule": {
+              "schedule_method": "2",
+              "allocation_rule":"5",
+              "smartDispatchs":true,
+              "saturation":"10",
+              "smartDispatch":"1"
+            }
+          }
+        ]
+      },
+      {
+        "rule_level": "1",
+        "rule_mark": "1",
+        "rule_max_money": "200",
+        "rule_sysmbol": "1",
+        "rule_min_money":"1",
+        "rule_case_type": ["1","2"],
+        "rule_loss": ["1"],
+        "rule_cj":["1"],
+        "is_super_rule":true,
+        "priority_group":[
+          {
+            "name":"业务组3",
+            "rule": {
+              "schedule_method": "2",
+              "allocation_rule":"5",
+              "smartDispatchs":true,
+              "saturation":"10",
+              "smartDispatch":"1"
+            }
+          }
+        ],
+        "bottom_group":[
+          {
+            "name":"业务组3",
+            "rule": {
+              "schedule_method": "2",
+              "allocation_rule":"5",
+              "smartDispatchs":true,
+              "saturation":"10",
+              "smartDispatch":"1"
+            }
+          }
+        ]
+      }
+
+    ],
+    "outRepairerRules": {
+        "wx_repairer_range_control": "1",
+        "switch_related": "1",
+        "switchSelection": "1",
+        "location": "广东省分公司",
+        "ordinary": [
+          {
+            "areas" : ["广东省-广州市"],
+            "foreignRepairers": ["外修商14"]
+          }
+        ],
+        "exception": [
+          {
+            "foreignRepairers": [ "外修商12"],
+            "groups": ["天河列外维修厂"]
+          }
+        ],
+        "specialize": [
+          {
+              "areas" : ["广东省-云浮市"],
+              "foreignRepairers": ["外修商12"],
+              "accessories": ["倒车显示器"]
+          }
+        ]
+      },
+    "videoRules": {
+        "company": ["安徽省分公司","广东省分公司"],
+        "business_groups": ["广州test维修1","定损测试11111"],
+        "businessGroups": [
+          {
+            "groupName": "业务组4",
+            "canUseArea": ["河北省","境外"]
+          },
+          {
+            "groupName": "业务组5",
+            "canUseArea": ["广东省","湖南省"]
+          }
+        ]
+    }
+  }
+]
